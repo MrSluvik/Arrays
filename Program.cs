@@ -13,7 +13,7 @@ namespace Arrays
         {
             OutputEncoding = Encoding.Unicode;//для кирилиці
 
-            WriteLine("Введіть текст ");
+            WriteLine("Введіть текст");
 
             string numb = Convert.ToString(ReadLine());
             string[] substrings = numb.Split(" ");
