@@ -13,7 +13,7 @@ namespace Arrays
         {
             OutputEncoding = Encoding.Unicode;//для кирилиці
 
-            WriteLine("Введіть текст англійською ");
+            WriteLine("Введіть текст ");
 
             string numb = Convert.ToString(ReadLine());
             string[] substrings = numb.Split(" ");
@@ -48,7 +48,7 @@ namespace Arrays
             {
                 Write($"{substrings[i]} ");
             }
-            Write($"Статистика : {count} заміни  забороненого слова ");
+            Write($"\nСтатистика : {count} заміни  забороненого слова ");
 
         }
     }
