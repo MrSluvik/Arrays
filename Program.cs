@@ -22,16 +22,16 @@ namespace Arrays
             size--;
             for (int i = 1; i < edText.Length; i++)
             {
-                if (i == size)
+                if (i == size)//коли дійшли до кінця і там стоїть крапка
                 {
                     break;
                 }
-               else  if (edText[i] == '.' && edText[i+1]==' ' ) 
+               else  if (edText[i] == '.' && edText[i+1]==' ' ) //варіант такий : я Земля. Ти людина.
                 {
                 edText[i+2]= Char.ToUpper(edText[i+2]);
                     
                 }
-               else if (edText[i] == '.' && edText[i + 1] != ' ' )
+               else if (edText[i] == '.' && edText[i + 1] != ' ' ) //я Земля.Ти людина.
                 {
                     edText[i + 1] = Char.ToUpper(edText[i + 1]);
 
